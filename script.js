@@ -1,6 +1,6 @@
 function calculateUnitCircle() {
     const angleElement = document.querySelector("#unitCircleCalculator #input");
-    const dropdown = document.querySelector("#dropdown")
+    const dropdown = document.querySelector("#unitCircleCalculator #dropdown")
     const resultElement = document.querySelector("#unitCircleCalculator .result");
     let angle = angleElement.value
 
@@ -13,9 +13,6 @@ function calculateUnitCircle() {
         resultElement.style.color = "red";
         return
     }
-
-    //angleElement.value = conditionedAngle
-
     if (dropdown.value == "degrees") {
         let conditionedAngle = +(eval(angle) % 360).toFixed(3)
 
@@ -103,15 +100,18 @@ function calculateUnitCircle() {
         resultElement.innerHTML = `x = cos(${conditionedAngle}) = ${x}\ny = sin(${conditionedAngle}) = ${y}\ntan(${conditionedAngle}) = ${tan}`
 
     } else if (dropdown.value == "piRad") {
-        let conditionedAngle = +(eval(angle) % 2 * Math.PI)
-        let roundedAngle = conditionedAngle.toFixed(3)
+        //let conditionedAngle = +(eval(angle) % 2 * Math.PI)
+        //let roundedAngle = conditionedAngle.toFixed(3)
+        let conditionedAngle = math.fraction(angle)
+        console.log(conditionedAngle)
+
         x = +Math.cos(conditionedAngle).toFixed(4)
         y = +Math.sin(conditionedAngle).toFixed(4)
         tan = +Math.tan(conditionedAngle).toFixed(4)
 
         resultElement.style.color = "black";
-        resultElement.innerHTML = `x = cos(${roundedAngle}) = ${x}\ny = sin(${roundedAngle}) = ${y}\ntan(${roundedAngle}) = ${tan}`
-
+        //resultElement.innerHTML = `x = cos(${roundedAngle}) = ${x}\ny = sin(${roundedAngle}) = ${y}\ntan(${roundedAngle}) = ${tan}`
+        resultElement.innerHTML = `${conditionedAngle}`
     }
 
 
