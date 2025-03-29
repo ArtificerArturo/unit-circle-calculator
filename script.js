@@ -18,9 +18,11 @@ function calculateUnitCircle() {
         let conditionedAngle = +(eval(angle) % 360).toFixed(3)
         checkSpecialValues(conditionedAngle)
         resultElement.innerHTML = `x = cos(${conditionedAngle})° = ${x}\ny = sin(${conditionedAngle})° = ${y}\ntan(${conditionedAngle})° = ${tan}`
+        /* coordinate display -- not called for per se
         const coordDiv = document.createElement("div")
         coordDiv.innerHTML = `(${x}, ${y})`
         resultElement.appendChild(coordDiv)
+        */
     } else if (dropdown.value == "radians") {
         let conditionedAngle = +(eval(angle) % (2 * Math.PI)).toFixed(3)
         checkSpecialValues(conditionedAngle)
@@ -29,8 +31,7 @@ function calculateUnitCircle() {
     } else if (dropdown.value == "piRad") {
         let conditionedAngle = math.fraction(angle).mod(2)
         checkSpecialValues(conditionedAngle)
-        resultElement.innerHTML = `x = cos(${conditionedAngle}) = ${x}\ny = sin(${conditionedAngle}) = ${y}\ntan(${conditionedAngle}) = ${tan}`
-
+        resultElement.innerHTML = `x = cos(${angle} × π) = ${x}\ny = sin(${angle} × π) = ${y}\ntan(${angle} × π) = ${tan}`
     }
 
     function checkSpecialValues(conditionedAngle) {
