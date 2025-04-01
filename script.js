@@ -128,7 +128,7 @@ function calculateUnitCircle() {
         }
         resultElement.style.color = "black";
     }
-
+    MathJax.typesetPromise()
 }
 
 

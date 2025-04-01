@@ -18,6 +18,7 @@
     display: inline-block;
     transition: 0.1s;
     text-decoration: none;
+    font-size: 18px;
 }
 
 #unitCircleCalculator .calculate:hover {
@@ -28,10 +29,8 @@
 #unitCircleCalculator {
     max-width: 400px;
     margin: 0 auto;
-}
-
-#unitCircleCalculator #redirect {
-    display: inline-block;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
 }
 
 #unitCircleCalculator .result {
@@ -47,17 +46,48 @@
 }
 
 #unitCircleCalculator .background input {
-    display: inline-block;
     padding: 10px;
     background-color: white;
-    max-width: 100px;
+    border: solid 1px #cbcbcb;
+    width: 100px;
+    font-size: 18px;
 }
 
 #unitCircleCalculator #inputAndDropdown {
     display: flex;
     align-items: center;
+    gap: 4px;
 }
 
 #unitCircleCalculator #dropdown {
-    height: 39px
+    border: solid 1px #cbcbcb;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#unitCircleCalculator mjx-math,
+math {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+/* do not bring to wordpress below this line */
+#unitCircleCalculator a {
+    text-decoration: underline;
+    color: #000;
+    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+    text-align: center;
+    font-size: 90%;
+}
+
+#unitCircleCalculator a:hover {
+    text-decoration-color: #fc0;
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #000;
+    transition-timing-function: ease;
+    transition-duration: 3s;
 }

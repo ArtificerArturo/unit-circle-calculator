@@ -16,7 +16,7 @@
 
     <div class="calculatorcontainer" id="unitCircleCalculator">
         <div class="background">
-            <div><label for="input">Convert Unit Circle Things</label></div>
+            <div><label for="input">Convert Unit Circle Angle to Coordinates</label></div>
             <div id="inputAndDropdown">
                 <div><input onkeypress="if (event.key === 'Enter') calculateUnitCircle()" id="input" placeholder="Angle"
                         type="text"></div>
@@ -28,6 +28,9 @@
             </div>
             <div class="result"></div>
             <div><button class="calculate" onclick="calculateUnitCircle()" data-uw-rm-kbnav="click">Calculate</button>
+            </div>
+            <div>
+                <img src="unitcircle.png" alt="digram of the unit circle">
             </div>
         </div>
         <div id="formula" style="text-align: center; margin-bottom: 20px; font-size: 90%;"> Found a bug? <a
