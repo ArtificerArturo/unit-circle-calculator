@@ -20,7 +20,7 @@
             <div id="inputAndDropdown">
                 <div><input onkeypress="if (event.key === 'Enter') calculateUnitCircle()" id="input" placeholder="Angle"
                         type="text"></div>
-                <div><select id="dropdown">
+                <div><select id="dropdown" onchange="clearForm()">
                         <option value="degrees">degrees (deg)</option>
                         <option value="radians">radians (rad)</option>
                         <option value="piRad">× π radians</option>
@@ -30,7 +30,7 @@
             <div><button class="calculate" onclick="calculateUnitCircle()" data-uw-rm-kbnav="click">Calculate</button>
             </div>
             <div>
-                <img src="unitcircle.png" alt="digram of the unit circle">
+                <img src="unitcircle.png" alt="diagram of the unit circle">
             </div>
         </div>
         <div id="bugLink" style="text-align: center; margin-bottom: 20px; font-size: 90%;"> Found a bug? <a

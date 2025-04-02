@@ -1,3 +1,10 @@
+#unitCircleCalculator {
+    max-width: 420px;
+    margin: 0 auto;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+}
+
 #unitCircleCalculator .background {
     background-color: #fafafa;
     padding: 20px;
@@ -5,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 #unitCircleCalculator .calculate {
@@ -26,17 +33,13 @@
     color: #fff;
 }
 
-#unitCircleCalculator {
-    max-width: 400px;
-    margin: 0 auto;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 18px;
-}
-
 #unitCircleCalculator .result {
     font-weight: 700;
     padding: 0px 15px;
     white-space: pre-wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 #unitCircleCalculator #bugLink {
