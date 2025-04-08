@@ -1,96 +1,100 @@
 #unitCircleCalculator {
-    max-width: 420px;
-    margin: 0 auto;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 18px;
+   max-width: 420px;
+   margin: 0 auto;
+   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+   font-size: 18px;
 }
 
 #unitCircleCalculator .background {
-    background-color: #fafafa;
-    padding: 20px;
-    border: solid 1px #cbcbcb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+   background-color: #fafafa;
+   padding: 20px;
+   border: solid 1px #cbcbcb;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
 }
 
 #unitCircleCalculator .calculate {
-    background-color: #fc0;
-    color: #333;
-    font-weight: 700;
-    border-radius: 8px;
-    border: 1px solid #cbcbcb;
-    padding: 10px 20px;
-    display: inline-block;
-    transition: 0.1s;
-    text-decoration: none;
-    font-size: 18px;
+   background-color: #fc0;
+   color: #333;
+   font-weight: 700;
+   border-radius: 8px;
+   border: 1px solid #cbcbcb;
+   padding: 10px 20px;
+   display: inline-block;
+   transition: 0.1s;
+   text-decoration: none;
+   font-size: 18px;
 }
 
 #unitCircleCalculator .calculate:hover {
-    background-color: #666;
-    color: #fff;
+   background-color: #666;
+   color: #fff;
 }
 
 #unitCircleCalculator .result {
-    font-weight: 700;
-    padding: 0px 15px;
-    white-space: pre-wrap;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+   font-weight: 700;
+   padding: 0px 15px;
+   white-space: pre-wrap;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+#unitCircleCalculator img {
+   width: 360px;
 }
 
 #unitCircleCalculator #bugLink {
-    font-size: medium;
-    padding: 10px;
-    text-align: left;
+   font-size: medium;
+   padding: 10px;
+   text-align: left;
 }
 
 #unitCircleCalculator .background input {
-    padding: 10px;
-    background-color: white;
-    border: solid 1px #cbcbcb;
-    width: 100px;
-    font-size: 18px;
+   padding: 10px;
+   background-color: white;
+   border: solid 1px #cbcbcb;
+   width: 100px;
+   font-size: 18px;
 }
 
 #unitCircleCalculator #inputAndDropdown {
-    display: flex;
-    align-items: center;
-    gap: 4px;
+   display: flex;
+   align-items: center;
+   gap: 4px;
 }
 
 #unitCircleCalculator #dropdown {
-    border: solid 1px #cbcbcb;
-    font-size: 18px;
-    padding: 10px;
+   border: solid 1px #cbcbcb;
+   font-size: 18px;
+   padding: 10px;
 }
 
 #unitCircleCalculator mjx-math,
 math {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    flex-wrap: wrap;
-    row-gap: 10px;
+   display: inline-flex;
+   align-items: center;
+   gap: 4px;
+   flex-wrap: wrap;
+   row-gap: 10px;
 }
 
 /* do not bring to wordpress below this line */
 #unitCircleCalculator a {
-    text-decoration: underline;
-    color: #000;
-    transition: color .1s ease-in-out, background-color .1s ease-in-out;
-    text-align: center;
-    font-size: 90%;
+   text-decoration: underline;
+   color: #000;
+   transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+   text-align: center;
+   font-size: 90%;
 }
 
 #unitCircleCalculator a:hover {
-    text-decoration-color: #fc0;
-    -webkit-text-fill-color: #000;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: #000;
-    transition-timing-function: ease;
-    transition-duration: 3s;
+   text-decoration-color: #fc0;
+   -webkit-text-fill-color: #000;
+   -webkit-text-stroke-width: 0.5px;
+   -webkit-text-stroke-color: #000;
+   transition-timing-function: ease;
+   transition-duration: 3s;
 }

@@ -1,2 +1,2 @@
 issues:
-piRad 0 = 0/1
+negative pirad angles don't show the negative, answer is correct though
