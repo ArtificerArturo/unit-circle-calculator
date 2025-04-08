@@ -25,6 +25,7 @@ function calculateUnitCircle() {
    let dirtyTanEquals = ""
    let piRadAngle = ""
    let timesPI = `<mo>&#xd7;</mo><mi>&#x3c0;</mi>`
+   let piRadSign = ""
 
    resultElement.innerHTML = ""
    resultElement.style.color = "black"
@@ -51,8 +52,11 @@ function calculateUnitCircle() {
       tanDiv.innerHTML = `<math><mi>tan</mi><mfenced><mrow><mn>${conditionedAngle}</mn></mrow></mfenced>${dirtyTanEquals}${dirtyTan}${cleanTanEquals}${tan}</math>`
    } else if (dropdown.value == "piRad") {
       let conditionedAngle = math.fraction(angle).mod(2)
+      console.log(conditionedAngle)
       checkSpecialValues(conditionedAngle)
       addEqualsSign()
+      if (conditionedAngle.s == -1) piRadSign = `<mo>-</mo>`
+      else piRadSign = ""
       if (conditionedAngle.n == 0) {
          piRadAngle = `<mn>0</mn>`
          timesPI = ""
@@ -60,8 +64,9 @@ function calculateUnitCircle() {
          piRadAngle = `<mi>&#x3c0;</mi>`
          timesPI = ""
       } else {
-         piRadAngle = `<mfrac><mn>${conditionedAngle.n}</mn><mn>${conditionedAngle.d}</mn></mfrac>`
+         piRadAngle = `<mfrac><mn>${piRadSign}${conditionedAngle.n}</mn><mn>${conditionedAngle.d}</mn></mfrac>`
       }
+
       xDiv.innerHTML = `<math><mi>x</mi><mo>=</mo><mi>cos</mi><mfenced><mrow>${piRadAngle}${timesPI}</mrow></mfenced>${dirtyXYEquals}${dirtyX}${cleanXYEquals}${x}</math>`
       yDiv.innerHTML = `<math><mi>y</mi><mo>=</mo><mi>sin</mi><mfenced><mrow>${piRadAngle}${timesPI}</mrow></mfenced>${dirtyXYEquals}${dirtyY}${cleanXYEquals}${y}</math>`
       tanDiv.innerHTML = `<math><mi>tan</mi><mfenced><mrow>${piRadAngle}${timesPI}</mrow></mfenced>${dirtyTanEquals}${dirtyTan}${cleanTanEquals}${tan}</math>`
