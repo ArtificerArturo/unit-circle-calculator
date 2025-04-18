@@ -263,10 +263,8 @@ function calculateUnitCircle() {
 }
 
 function clearForm() {
-   const angleElement = document.querySelector("#unitCircleCalculator #input")
    const resultElement = document.querySelector("#unitCircleCalculator .result")
 
-   angleElement.value = ""
    resultElement.innerHTML = ""
    resultElement.style.color = "black"
 }
